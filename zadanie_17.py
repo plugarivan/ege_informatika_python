@@ -5,24 +5,24 @@
 Определите количество подходящих чисел, принадлежащих отрезку [10001;50000],
 а также наименьшее из таких чисел. В ответе запишите два целых числа: сначала количество, затем наименьшее число
 """
+#ищем сколько простых чисел на этом промежутке, записываем в список divs
 divs = []
 for i in range(10001, 50001):
-    k = 0
-    for d in range(2, i):
-        if i % d == 0:
-            k += 1
-            if k > 1:
-                break
-    if k == 1:
+    count = 2 # есть  1 и само число
+    for j in range(2, i):
+        if i % j == 0:
+            count = 0
+            break # не простое
+    if count == 2:
         divs.append(i)
-sp = []
-for i in range(10001, 50001):
-    kk = 0
-    for d in range(1, i + 1):
-        if i % d == 0 and d in divs:
-            kk += 1
-            if kk>3:
-                break
-    if kk == 3:
-        sp.append(i)
-print(len(sp), min(sp))
+#проверяем у скольких числе их не больше трех
+count = 0
+for i in range(10001, 50002):
+    k = 0
+    for j in range(len(divs)):
+        if i % divs[j] == 0:
+            k += 1
+        if k > 3:
+            count += 1
+            break
+print(count)
