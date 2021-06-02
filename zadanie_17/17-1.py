@@ -25,4 +25,3 @@ for i in range(10001, 50001):
             min = i
     d1 = 0
 print(k, min)
-

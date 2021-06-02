@@ -8,6 +8,3 @@ while x > 0:
     s += x % 3
     x = x // 3
 print(s)
-
-
-

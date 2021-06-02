@@ -4,7 +4,7 @@
 Например, в тексте CCCBBABAABCC есть комбинации CCC, CCB, BBA и AAB.
 Чаще всего — 2 раза — после двух одинаковых символов стоит B, в ответе для этого случая надо написать B.
 """
-with open('files/24/24.txt') as f:
+with open('../files/24/24.txt') as f:
     s = f.readline()
     d = {}# словарь букв
     for i in range(2, len(s)):
