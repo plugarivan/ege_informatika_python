@@ -5,7 +5,7 @@
 prost = []
 for i in range(3532000, 3532161):
     k = 2
-    for d in range(2, i):
+    for d in range(2, round(i**0.5)):
         if i % d == 0:
             k += 1
             if k > 3:
