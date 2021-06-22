@@ -6,14 +6,15 @@
 Для каждого найденного числа запишите в ответе его наибольший нетривиальный делитель.
 Ответы расположите в порядке возрастания.
 """
-for i in range(123456789, 150000000):
+for i in range(123456789, 223456790):
+    sqrt = i**0.5
     divs = 0
-    sqrt = round(i**0.5)
-    for d in range(2, sqrt+1):
-        if i % d == 0:
-            divs.add(d)
-            divs.add(i // d)
-            if len(divs) > 3:
-                break
-    if len(divs) == 3:
-        print(i)
+    if sqrt == round(sqrt):
+        maxdivs = 1
+        for d in range(2, round(sqrt)):
+            if i % d == 0:
+                if maxdivs == 1:
+                    maxdivs = i // d
+                divs += 2
+        if divs == 2:
+            print(i, maxdivs)
