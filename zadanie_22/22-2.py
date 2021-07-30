@@ -1,12 +1,14 @@
-for i in range(100, 10000):
+"""Укажите наименьшее возможное значение х, при вводе которого программа выведет числа 4 и 10"""
+for i in range(1, 10000):
     x = i
-    l = x - 30
-    m = x + 30
-    while l != m:
-        if l > m:
-            l = l - m
-        else:
-            m = m - l
-    if m == 30:
+    m = 0
+    s = 0
+    while x > 0:
+        d = x % 8
+        s += d
+        if d > m:
+            m = d
+        x = x // 8
+    if m == 4 and s == 10:
         print(i)
         break
