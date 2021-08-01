@@ -1,8 +1,11 @@
-import random
+from random import randint
 
-s = [random.randrange(1, 101) for i in range(1, 101)]
-for i in range(1, len(s)):
-    if s[i] > s[i-1] and s[i] > s[i+1]
+a = [randint(0, 10) for i in range(10)]
+print(a)
 
+b = a.index(max(a))
+c = a.index(min(a))
+a[b], a[c] = a[c], a[b]
+print(a)
 
 
