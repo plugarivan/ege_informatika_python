@@ -14,6 +14,8 @@ with open('../files/27/s27-B.txt') as f:
             chet += 1
         else:
             nechet += 1
+        if a % 2 != b % 2:
+
     print(summa)
     print(summa % 2)
     print(chet, nechet)
