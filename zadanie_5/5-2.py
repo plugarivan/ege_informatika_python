@@ -19,7 +19,7 @@ for i in range(0, 256):
             x1+='1'
         else:
             x1+='0'
-    if int(x1, 2) - int(x, 2) == 133:
+    if int(x1, 2) == 18:
         print(i)
 
 
