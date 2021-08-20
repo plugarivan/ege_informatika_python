@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/git_ege_informatika.iml" filepath="$PROJECT_DIR$/.idea/git_ege_informatika.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/ege_informatika_python.iml" filepath="$PROJECT_DIR$/.idea/ege_informatika_python.iml" />
     </modules>
   </component>
 </project>
