@@ -19,3 +19,4 @@ while '222' in s or '555' in s:
         s = s.replace('555', '2')
 
 print(s)
+
