@@ -1,4 +1,8 @@
-s = 1
-for i in range(1, 11):
-    s += 2 ** i
-print(s)
+summa = 0
+a = int(input())
+while a != 0:
+    if a % 7 == 0 and a % 10 == 2:
+        summa += a
+    a = int(input())
+print(summa)
+
