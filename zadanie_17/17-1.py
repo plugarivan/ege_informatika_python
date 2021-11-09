@@ -7,8 +7,8 @@
 with open('../files/17/17-r2.txt') as f:
     s = [int(x) for x in f]
     numbers = []
-    for i in range(1, len(s)):
-        for j in range(i, len(s) - 1):
+    for i in range(0, len(s) - 1):
+        for j in range(i + 1, len(s)):
             if ((s[i] - s[j]) % 2 == 0) and (s[i] % 31 == 0 or s[j] % 31 == 0):
                 numbers.append(s[i] + s[j])
     print(len(numbers), max(numbers))

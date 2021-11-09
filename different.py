@@ -1,22 +1,6 @@
-for n in range(1, 100):
-    s = bin(n)[2:]
-    if s.count('1') == s.count('0'):
-        s += s[-1]
-    elif s.count('1') > s.count('0'):
-        s += '0'
-    else:
-        s += '1'
-    if s.count('1') == s.count('0'):
-        s += s[-1]
-    elif s.count('1') > s.count('0'):
-        s += '0'
-    else:
-        s += '1'
-    if s.count('1') == s.count('0'):
-        s += s[-1]
-    elif s.count('1') > s.count('0'):
-        s += '0'
-    else:
-        s += '1'
-    if int(s, 2) % 4 == 0:
-        print(n)
+s = [1, 2, 3, 4, 5]
+k = 0
+for i in range(0, len(s)-1):
+    for j in range(i + 1, len(s)):
+        k += 1
+print(k)
