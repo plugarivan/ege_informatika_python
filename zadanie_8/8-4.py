@@ -4,10 +4,9 @@
 '''
 from itertools import permutations
 words = permutations('ворон')
-k = 0
+s = set()
 for w in words:
     word = ''.join(w)
     if 'оо' not in word:
-        print(word)
-        k += 1
-print(k)
+        s.add(word)
+print(len(s))

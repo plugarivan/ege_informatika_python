@@ -1,9 +1,3 @@
-def f(x):
-    yield x ** 2
-
-def ff(x):
-    return x ** 2
-
-for i in f(10):
-    print(i)
-print(ff(5))
+import random
+s = [random.randint(1, 20) for i in range(1, 21)]
+print(sum(s))
