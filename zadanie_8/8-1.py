@@ -15,3 +15,17 @@ for a in letters:
                         and word.count('т') == 1:
                         words.add(word)
 print(len(words))
+
+# решение с использованием itertools
+
+from itertools import permutations
+
+words = set(permutations("МАРТА", r = 5))
+counter = 0
+
+for word in words:
+    word = ''.join(word)
+    if 'АА' not in word:
+        counter += 1
+
+print(counter)
