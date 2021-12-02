@@ -11,12 +11,11 @@
 Строки выводятся в порядке возрастания найденных чисел.
 Количество строк в таблице для ответа избыточно.
 '''
-for i in range(700000, 700500):
+for i in range(700001, 700500):
     divs = set()
     for d in range(2, round(i ** 0.5)):
         if i % d == 0:
-            divs.add(d)
-            divs.add(i // d)
+            divs.update((d, i//d))
     if len(divs) > 0:
         m = max(divs) + min(divs)
         if m % 10 == 8:
