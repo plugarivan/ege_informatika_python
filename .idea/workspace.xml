@@ -30,7 +30,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ege" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
@@ -151,9 +151,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.different" />
+        <item itemvalue="Python.19-21-1" />
         <item itemvalue="Python.26-2" />
         <item itemvalue="Python.26-1" />
-        <item itemvalue="Python.19-21-1" />
         <item itemvalue="Python.25-20" />
       </list>
     </recent_temporary>
