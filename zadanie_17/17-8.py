@@ -1,26 +1,16 @@
-data = [int(x) for x in open('../files/17/17-243.txt')]
+'''
+(П. Финкель) В файле 17-202.txt содержится последовательность целых чисел, которые принимают значения от -10000 до 10000 включительно.
+Тройка идущих подряд чисел последовательности называется уникальной, если только второе из них является положительным
+трёхзначным числом, заканчивающимся на 12. Определите количество уникальных троек чисел, а затем – максимальную из всех сумм таких троек.
+'''
 
-def sumDigits( n ):
-  return sum( map(int, str(n)) )
+with open('../files/17/17-202.txt') as f:
+    s = [int(x) for x in f]
+    numbers = []
+    for i in range(2, len(s)):
+        if (s[i - 1] > 0 and len(str(abs(s[i - 1]))) == 3 and abs(s[i - 1]) % 100 == 12) and \
+                (s[i] <= 0 or len(str(abs(s[i]))) != 3 or abs(s[i]) % 100 != 12) and \
+                (s[i - 2] <= 0 or len(str(abs(s[i - 2]))) != 3 or abs(s[i - 2]) % 100 != 12):
+            numbers.append(s[i - 2] + s[i - 1] + s[i])
+print(len(numbers), max(numbers))
 
-ref = sum( sumDigits(x) for x in data
-                          if x % 49 == 0 )
-print( ref )
-
-def nCond2( arr, func, func2 ):
-  return (func(arr[0]) and not func(arr[1]) and func2(arr[1]) or
-          func(arr[1]) and not func(arr[0]) and func2(arr[0]))
-
-count, mi, ma = 0, 10**10, 0
-for i, n in enumerate(data):
-   if i > 0:
-     pair = data[i-1:i+1]
-     if nCond2( pair, lambda x: x > ref,
-                      lambda x: x % 10 == 7 ):
-        # print(pair)
-        ma = max( ma, sum(pair) )
-        mi = min( mi, sum(pair) )
-        count += 1
-
-print( count, mi )
-print( count, ma )
