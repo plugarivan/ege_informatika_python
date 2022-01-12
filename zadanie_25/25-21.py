@@ -1,14 +1,24 @@
-
-i = 800001
+'''
+Напишите программу, которая перебирает целые числа, большие 550000, в порядке возрастания
+и ищет среди них такие, для которых наибольший натуральный делитель, не равный самому
+числу, не является простым числом. Программа должна найти и вывести первые 6 таких чисел,
+и значения упомянутых значений.
+'''
+def neprost(n):
+    for i in range(2, n):
+        if n % i == 0:
+            return True
+    return False
+i = 550001
 k = 0
-while k != 5:
+while k != 6:
     divs = set()
-    for d in range(2, round(i ** 0.5)):
+    for d in range(1, round(i ** 0.5)):
         if i % d == 0:
             divs.add(d)
             divs.add(i // d)
-    if len(divs) != 0:
-        if (max(divs) + min(divs)) % 138 == 0:
-            k += 1
-            print(i, max(divs) + min(divs))
+    mx = max(divs)
+    if neprost(mx):
+        k += 1
+        print(i, mx)
     i += 1
