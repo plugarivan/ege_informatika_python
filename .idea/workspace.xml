@@ -43,7 +43,7 @@
       <recent name="E:\develop\programming\python_git\ege_informatika_python\files\17" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.different">
+  <component name="RunManager" selected="Python.8-8">
     <configuration name="12-3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ege_informatika_python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -107,7 +107,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="8-7" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="8-8" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ege_informatika_python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -119,7 +119,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zadanie_8/8-7.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zadanie_8/8-8.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -151,11 +151,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.8-8" />
         <item itemvalue="Python.different" />
         <item itemvalue="Python.24-19" />
         <item itemvalue="Python.19-21-1" />
         <item itemvalue="Python.12-3" />
-        <item itemvalue="Python.8-7" />
       </list>
     </recent_temporary>
   </component>
