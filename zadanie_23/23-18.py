@@ -14,6 +14,3 @@ def f(x, y):
     return f(x + 1, y) + f(int(bin(x)[2:] + '0', 2), y) + f(int(bin(x)[2:] + '1', 2), y)
 
 print((f(5, 46)))
-
-
-
