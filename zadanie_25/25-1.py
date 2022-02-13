@@ -12,4 +12,4 @@ for i in range(190201, 190221):
             if len(divs) > 4:
                 break
     if len(divs) == 4:
-        print(divs)
+        print(sorted(list(divs))[-2:])

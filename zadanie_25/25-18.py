@@ -9,7 +9,6 @@ def prost(n):
             return False
     return True
 
-
 maximum = 100000000
 for i in range(309829, 365875):
     divs = set()
