@@ -1,12 +1,16 @@
-for i in range(1, 1000):
-  s = i
-  n = 200
-  while s // n >= 2:
-    s = s + 5
-    n = n + 5
-  if 99 < s < 1000:
-    print(i)
-
+i = 550001
+k = 0
+while k != 5:
+    divs = set()
+    for d in range(2, round(i ** 0.5)+1):
+        if i % d == 0:
+            divs.add(d)
+            divs.add(i // d)
+    if len(divs) != 0:
+        if (sum(divs) // len(divs)) % 31 == 13:
+            k += 1
+            print(i, sum(divs) // len(divs))
+    i += 1
 
 
 

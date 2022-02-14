@@ -13,7 +13,7 @@
 '''
 for i in range(700001, 700500):
     divs = set()
-    for d in range(2, round(i ** 0.5)):
+    for d in range(2, round(i ** 0.5)+1):
         if i % d == 0:
             divs.update((d, i//d))
     if len(divs) > 0:

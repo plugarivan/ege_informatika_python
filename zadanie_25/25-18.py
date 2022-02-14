@@ -12,7 +12,7 @@ def prost(n):
 maximum = 100000000
 for i in range(309829, 365875):
     divs = set()
-    for d in range(2, round(i**0.5)):
+    for d in range(2, round(i**0.5)+1):
         if d * (i // d) == i and prost(d) and prost(i // d):
             print(d, i // d)
             if abs(i // d - d) < maximum:
