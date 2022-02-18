@@ -1,16 +1,14 @@
-i = 550001
-k = 0
-while k != 5:
-    divs = set()
-    for d in range(2, round(i ** 0.5)+1):
-        if i % d == 0:
-            divs.add(d)
-            divs.add(i // d)
-    if len(divs) != 0:
-        if (sum(divs) // len(divs)) % 31 == 13:
-            k += 1
-            print(i, sum(divs) // len(divs))
-    i += 1
+def f(x, a):
+    return (a % 12 == 0) and ((530 % x == 0) <= ((a % x != 0) <= (170 % x != 0)))
 
+k = 0
+for a in range(1, 1001):
+    flag = True
+    for x in range(1, 1000):
+        if not(f(x, a)):
+            flag = False
+    if flag:
+        k += 1
+print(k)
 
 
