@@ -11,8 +11,8 @@ def perevod(n):
     while n > 0:
         s += str(n % 4)
         n //= 4
-    return s
-print(perevod(2134))
+    return s[::-1]
+
 def f(x, y):
     if x > y:
         return 0

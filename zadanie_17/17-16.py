@@ -1,14 +1,21 @@
+'''
+(Л. Шастин) В файле 17-10.txt содержится последовательность целых чисел. Элементы последовательности могут принимать
+значения от 0 до 10000 включительно. Определите сначала количество пар, сумма элементов которых при переводе в систему
+счисления с основанием 7 образует число-палиндром, а затем наибольшую сумму-палиндром в семеричной системе счисления.
+Под парой чисел подразумевается два идущих подряд элемента последовательности.
+'''
+def seven(n):
+    chislo = ''
+    while n > 0:
+        chislo += str(n % 7)
+        n //= 7
+    return chislo[::-1]
+
 with open('../files/17/17-10.txt') as f:
     s = [int(x) for x in f]
     numbers = []
     for i in range(1, len(s)):
-        summa = s[i] + s[i - 1]
-        ch = 0
-        while summa > 0:
-            ch += summa % 7
-            summa //= 7
-        f = str(ch)
-        if f == f[::-1]:
-            fff = int(f, 7)
-            numbers.append(fff)
-print(numbers)
+        summa = seven(s[i] + s[i-1])
+        if summa == summa[::-1]:
+            numbers.append(int(summa))
+print(len(numbers), max(numbers))
