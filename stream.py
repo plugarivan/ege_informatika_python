@@ -1,13 +1,12 @@
-with open('./files/24/24-2.txt') as f:
-    s = f.readline()
-    k, kmax = 1, 1
-    maxi = 0
-    for i in range(1, len(s)):
-        if s[i] < s[i - 1]:
-            k += 1
-            if k > kmax:
-                kmax = k
-                maxi = i
+for i in range(62, 10000):
+    x = i
+    a = x - 61
+    b = 3 * x - 138
+    while a != b:
+        if a > b:
+            a -= b
         else:
-            k = 1
-print(maxi - kmax + 1 + 1)
+            b -= a
+    if a == 45:
+        print(i)
+        break
