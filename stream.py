@@ -1,12 +1,10 @@
-for i in range(62, 10000):
-    x = i
-    a = x - 61
-    b = 3 * x - 138
-    while a != b:
-        if a > b:
-            a -= b
-        else:
-            b -= a
-    if a == 45:
-        print(i)
-        break
+from math import sqrt
+for i in range(190061, 190073):
+    divs = set()
+    for d in range(1, round(sqrt(i)) + 1):
+        if i % d == 0 and d % 2 != 0:
+            divs.add(d)
+            if i // d % 2 != 0:
+                divs.add(i // d)
+    if len(divs) == 4:
+        print(sorted(divs))
