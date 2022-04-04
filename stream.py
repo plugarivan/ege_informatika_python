@@ -1,10 +1,9 @@
-from math import sqrt
-for i in range(190061, 190073):
-    divs = set()
-    for d in range(1, round(sqrt(i)) + 1):
-        if i % d == 0 and d % 2 != 0:
-            divs.add(d)
-            if i // d % 2 != 0:
-                divs.add(i // d)
-    if len(divs) == 4:
-        print(sorted(divs))
+s = 50 * '1' + 50 * '2' + 50 * '3'
+while '21' in s or '31' in s or '23' in s:
+    if '21' in s:
+        s = s.replace('21', '12', 1)
+    if '31' in s:
+        s = s.replace('31', '13', 1)
+    if '23' in s:
+        s = s.replace('23', '32', 1)
+print(s[10] + s[90] + s[130])
