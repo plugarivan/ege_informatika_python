@@ -1,9 +1,10 @@
-s = 50 * '1' + 50 * '2' + 50 * '3'
-while '21' in s or '31' in s or '23' in s:
-    if '21' in s:
-        s = s.replace('21', '12', 1)
-    if '31' in s:
-        s = s.replace('31', '13', 1)
-    if '23' in s:
-        s = s.replace('23', '32', 1)
-print(s[10] + s[90] + s[130])
+for a in range(1, 60):
+    for b in range(1, 60):
+        for c in range(1, 60):
+            s = '0' + a * '1' + b * '2' + c * '3'
+            while '01' in s or '02' in s or '03' in s:
+                s = s.replace('01', '2302', 1)
+                s = s.replace('02', '10', 1)
+                s = s.replace('03', '201', 1)
+            if s.count('1') == 51 and s.count('2') == 29 and s.count('3') == 23:
+                print(c)
