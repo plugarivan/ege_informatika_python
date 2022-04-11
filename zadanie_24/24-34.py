@@ -6,9 +6,6 @@ with open('../files/24/24-164.txt') as f:
     maximum = 0
     for s in f:
         if s.count('G') < 15:
-            slovar = {}
-            for c in s:
-                slovar[c] = slovar.get(c, 0) + 1
-            for i in slovar.keys():
+            for i in s:
                 maximum = max(maximum, s.rindex(i)-s.index(i))
 print(maximum)
