@@ -5,7 +5,6 @@
 '''
 x = 8 ** 20 + ((8 ** 22 - 8 ** 17) * (8 ** 13 + 8 ** 16))
 number = oct(x)[2:]
-while '7' in number:
-    number = number.replace('7', '0', 1)
+number = number.replace('7', '0')
 print(number)
 print(sum(map(int, number)))
