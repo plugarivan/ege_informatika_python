@@ -44,8 +44,8 @@
       <recent name="E:\develop\programming\python_git\ege_informatika_python\files\17" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.14-26">
-    <configuration name="14-23" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.14-12">
+    <configuration name="14-11" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ege_informatika_python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -57,7 +57,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zadanie_14/14-23.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zadanie_14/14-11.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -66,7 +66,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="14-24" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="14-12" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ege_informatika_python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -78,7 +78,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zadanie_14/14-24.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zadanie_14/14-12.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -152,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.14-12" />
+        <item itemvalue="Python.14-11" />
         <item itemvalue="Python.14-26" />
         <item itemvalue="Python.14-25" />
         <item itemvalue="Python.14-6" />
-        <item itemvalue="Python.14-24" />
-        <item itemvalue="Python.14-23" />
       </list>
     </recent_temporary>
   </component>
