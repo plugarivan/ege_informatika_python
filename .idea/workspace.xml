@@ -30,7 +30,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ege" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
@@ -44,7 +44,7 @@
       <recent name="E:\develop\programming\python_git\ege_informatika_python\files\17" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.17-23">
+  <component name="RunManager" selected="Python.stream">
     <configuration name="14-11" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ege_informatika_python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -152,8 +152,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.17-23" />
         <item itemvalue="Python.stream" />
+        <item itemvalue="Python.17-23" />
         <item itemvalue="Python.14-12" />
         <item itemvalue="Python.14-11" />
         <item itemvalue="Python.14-26" />
