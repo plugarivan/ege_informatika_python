@@ -19,3 +19,5 @@ with open('../files/17/17-10.txt') as f:
         if summa == summa[::-1]:
             numbers.append(int(summa))
 print(len(numbers), max(numbers))
+
+
