@@ -15,5 +15,5 @@ for n in range(100, 1000):
         numb.append(x % 10)
         x //= 10
     numb.sort()
-    if int(str(numb[-1]) + str(numb[-2])) - int(str(numb[0]) + str(numb[1])) == 50 and numb[0] != 0:
+    if int(str(numb[-1]) + str(numb[-2])) - int(str(numb[0]) + str(numb[1])) == 63 and numb[0] != 0:
         print(n)
