@@ -1,4 +1,9 @@
-for a in range(-100, 100):
-    for b in range(-100, 100):
-        if (1 + 3 * (a + 4) + 17) == (-1 + 3 * (b + 5) + 31) == 0:
-            print(a * b)
+k = 0
+chet = '02468'
+nechet = '13579'
+for i in range(10000, 100000, 5):
+    x = str(i)
+    if len(x) == len(set(x)) and ((x[0] in chet and x[1] in nechet and x[2] in chet and x[3] in nechet and x[4] in chet) or \
+            (x[0] in nechet and x[1] in chet and x[2] in nechet and x[3] in chet and x[4] in nechet)):
+        k += 1
+print(k)
