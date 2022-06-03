@@ -16,6 +16,4 @@ def f(x, y):
             return f(x * 1.5, y) + f(x + 1, y)
         else:
             return f(x + 1, y)
-
-
 print(f(1, 20))
