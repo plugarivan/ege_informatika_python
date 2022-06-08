@@ -1,17 +1,9 @@
-days = int(input())
-count, summa, yes = 0, 0, 0
-for i in range(days):
-    temp = int(input())
-    summa += temp
-    count += 1
-    if temp > 0:
-        yes += 1
-if yes >= 5:
-    print(summa / count)
-    print('YES')
+s = '111010111'
+
+if len(s) % 2 == 0:
+    s = s[:((len(s)-1) // 2)] + s[len(s) // 2 + 1:]
 else:
-    print(summa / count)
-    print('NO')
+    s = s[:(len(s) // 2) - 1] + s[len(s) // 2 + 2:]
 
 
 

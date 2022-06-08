@@ -16,4 +16,4 @@ def f(x, y):
             return f(x + 1, y) + f(x + 5, y) + f(x + c, y)
 
 
-print(f(1, 17))
+print(f(1, 13))

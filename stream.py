@@ -1,9 +1,15 @@
-k = 0
-chet = '02468'
-nechet = '13579'
-for i in range(10000, 100000, 5):
-    x = str(i)
-    if len(x) == len(set(x)) and ((x[0] in chet and x[1] in nechet and x[2] in chet and x[3] in nechet and x[4] in chet) or \
-            (x[0] in nechet and x[1] in chet and x[2] in nechet and x[3] in chet and x[4] in nechet)):
-        k += 1
-print(k)
+k = set()
+for n in range(4, 10000):
+    s = bin(n)[2:]
+    if s.count('1') > s.count('0'):
+        s += '0'
+    else:
+        s += '1'
+    if len(s) % 2 == 0:
+        s = s[:((len(s) - 1) // 2)] + s[len(s) // 2 + 1:]
+    else:
+        s = s[:(len(s) // 2) - 1] + s[len(s) // 2 + 2:]
+    if 50 <= int(s, 2) <= 100:
+        k.add(int(s, 2))
+print(len(k))
+
