@@ -17,3 +17,4 @@ with open('../files/17/17-1.txt') as f:
         if nCond(triple, lambda x: x < sred) >= 2 and nCond(triple, lambda x: '1' in str(x)) == 3:
             res.append(sum(triple))
 print(len(res), max(res))
+
